@@ -58,15 +58,6 @@ GitHub.comでホストされているリポジトリに対してOAuth認証を�
 - `API_USER_AUTHENTICATION = (TYPE = SNOWFLAKE_GITHUB_APP)`
 - `API_ALLOWED_PREFIXES` には `https://github.com` で始まるURL
 
-#### ⭐ 重要：OAuth認証情報（Client ID/Secret）は不要です
-
-`TYPE = SNOWFLAKE_GITHUB_APP` を指定すると、**Snowflakeが管理するGitHub App**（`Snowflake Computing`/`snowflakedb app`）を使用します。
-
-- **Client IDやClient Secretの設定は不要**
-- Snowflakeが内部でOAuth認証情報を管理
-- 管理者は上記のAPI INTEGRATIONを作成するだけ
-- ユーザーはブラウザでGitHubにログインして承認するだけで利用可能
-
 ---
 
 ## 2. 実行手順
